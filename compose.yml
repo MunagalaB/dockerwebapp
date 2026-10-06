@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: venkatesh1818/flm-project:db
+    image: venkatesh1818/first-project:DataBase
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: venkatesh1818/flm-project:javaApp
+    image: venkatesh1818/first-project:JavaApplication
     ports:
       - "1111:8080"
     deploy:
